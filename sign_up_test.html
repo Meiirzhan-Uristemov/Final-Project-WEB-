@@ -6,7 +6,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="assets/footer.css">
+        <link rel="stylesheet" href="assets/Header.css">
 </head>
 <style>
           body{
@@ -26,6 +27,26 @@
 
 </style>
 <body>
+
+
+        <header class="header">
+                <div class="box">
+                    <a class="box_a" href="Main.html"><div class="box_logo">
+                        <img id="profile_image" style="margin-left: 0px; margin-right: 1px;" src="assets/Resources/logo.png" class="rounded-circle header_elements" alt="Cinque Terre">
+                        <h3 class="header_elements" style="margin-left: 0px; font-weight: 650;">Tripadviser</h3>
+                    </div></a>
+                    <input type="text" class="search header_elements" placeholder="Search">
+                </div>
+                <div class="box2">
+                    <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/pencil.png" alt=""> Review</div></a>
+                    <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/heart.png" alt=""> Trips</div></a>
+                    <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/tic-tac.png" alt=""> Alerts</div></a>
+                    <a class="box_a" href="login_test.html"><div class="header_elements_sign">Sign in</div></a>
+                </div>
+            </header>
+
+
+
           <div style="height: 700px; display: flex; justify-content: center;flex-direction: column;">
                     <div class="mini-main" style="margin:auto; width: 600px;height: 400px;background-color: antiquewhite;box-shadow: 0 0 10px rgba(0, 0, 0 , 0.4);">
                        <h1 style="color: black;font-family: Trip Sans VF, Trip Sans, Arial, sans-serif;font-weight: 800;text-align: center;">Sign Up</h1> 
@@ -52,7 +73,7 @@
 
                        </div>
                        <div class="bottom-main" style="display: flex; justify-content: space-between;width: 600px;">
-                        <button  class="btn btn-primary"  onclick="document.location='project-1.html'">Main Page</button>  
+                        <button  class="btn btn-primary"  onclick="document.location='Main.html'">Main Page</button>  
                         <button id="nextt" class="btn btn-primary" onclick="checkAll()">Next</button>
                          
               </div>
@@ -60,6 +81,57 @@
 
                     
           </div>
+
+
+
+
+
+
+          <footer class="footer">
+                <div class="footer_intro">
+                    <div class="footer_top">
+                        <div class="footer_left">
+                            <img id="profile_image" style="margin-left: 0px;" src="assets/Resources/logo.png" class="rounded-circle header_elements" alt="Cinque Terre">
+                            <div class="footer_top_top">
+                                <div style="font-size: 12px;">© 2021 TripAdvisor LLC All rights reserved.</div>
+                                <div class="nav">
+                                    <a id="nav_a" href="#">Terms of Use</a>
+                                    <a id="nav_a" href="#">Privacy and Cookies Statement</a>
+                                    <a id="nav_a" href="#">Cookie consent</a>
+                                    <a id="nav_a" href="#">Site Map</a>
+                                    <a id="nav_a" href="#">How the site works</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select">
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>£ British Pounds</option>
+                                <option value="1">$ U. S. Dollars</option>
+                                <option value="2">A$ Australian Dollars </option>
+                                <option value="3">Euros</option>
+                            </select>
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>United Kingdom</option>
+                                <option value="1">Canada</option>
+                                <option value="2">Brazil</option>
+                                <option value="3">Russian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <p>
+                            This is the version of our website addressed 
+                            to speakers of English in United Kingdom. If you are 
+                            a resident of another country or region, please 
+                            select the appropriate version of Tripadvisor 
+                            for your country or region in the drop-down menu. <a>more</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+
+
 
           <script>
                     function checkAll(){

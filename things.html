@@ -4,9 +4,10 @@
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="style.css">
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+            <link rel="stylesheet" href="assets/Header.css">
+            <link rel="stylesheet" href="assets/footer.css">
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
           <title>THE 10 BEST Things To Do</title>
@@ -64,12 +65,30 @@
 
 </style>
 <body>
+
+      <header class="header">
+            <div class="box">
+                <a class="box_a" href="Main.html"><div class="box_logo">
+                    <img id="profile_image" style="margin-left: 0px; margin-right: 1px;" src="assets/Resources/logo.png" class="rounded-circle header_elements" alt="Cinque Terre">
+                    <h3 class="header_elements" style="margin-left: 0px; font-weight: 650;">Tripadviser</h3>
+                </div></a>
+                <input type="text" class="search header_elements" placeholder="Search" onclick="document.location='search.html'">
+            </div>
+            <div class="box2">
+                <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/pencil.png" alt=""> Review</div></a>
+                <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/heart.png" alt=""> Trips</div></a>
+                <a class="box_a" href=""><div class="header_elements_menu"><img style="margin-right: 7px; width: 20px;" src="assets/icons/tic-tac.png" alt=""> Alerts</div></a>
+                <a class="box_a" href="login_test.html"><div class="header_elements_sign">Sign in</div></a>
+            </div>
+        </header>
+
+
           <div class="main-text">
                     <div>
                               <h1><span>Things to Do in Istanbul</span></h1>
                     </div>
                
-               <button style="border-radius: 40%;width: 80px;" type="button" class="btn btn-dark">Map</button>
+               <button style="border-radius: 40%;width: 80px;" type="button" class="btn btn-dark" onclick="document.location='map.html'">Map</button>
           </div>
 
           <div class="main-text">
@@ -413,6 +432,51 @@
                   <br>
                   <br>
                </div>
+
+
+
+               <footer class="footer">
+                  <div class="footer_intro">
+                      <div class="footer_top">
+                          <div class="footer_left">
+                              <img id="profile_image" style="margin-left: 0px;" src="assets/Resources/logo.png" class="rounded-circle header_elements" alt="Cinque Terre">
+                              <div class="footer_top_top">
+                                  <div style="font-size: 12px;">© 2021 TripAdvisor LLC All rights reserved.</div>
+                                  <div class="nav">
+                                      <a id="nav_a" href="#">Terms of Use</a>
+                                      <a id="nav_a" href="#">Privacy and Cookies Statement</a>
+                                      <a id="nav_a" href="#">Cookie consent</a>
+                                      <a id="nav_a" href="#">Site Map</a>
+                                      <a id="nav_a" href="#">How the site works</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="select">
+                              <select class="custom-select" id="inputGroupSelect02">
+                                  <option selected>£ British Pounds</option>
+                                  <option value="1">$ U. S. Dollars</option>
+                                  <option value="2">A$ Australian Dollars </option>
+                                  <option value="3">Euros</option>
+                              </select>
+                              <select class="custom-select" id="inputGroupSelect02">
+                                  <option selected>United Kingdom</option>
+                                  <option value="1">Canada</option>
+                                  <option value="2">Brazil</option>
+                                  <option value="3">Russian</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="footer_bottom">
+                          <p>
+                              This is the version of our website addressed 
+                              to speakers of English in United Kingdom. If you are 
+                              a resident of another country or region, please 
+                              select the appropriate version of Tripadvisor 
+                              for your country or region in the drop-down menu. <a>more</a>
+                          </p>
+                      </div>
+                  </div>
+              </footer>
 
 </body>
 </html>
